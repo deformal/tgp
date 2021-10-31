@@ -1,9 +1,9 @@
 {
-  "version": "0.1.2",
+  "version": "0.2.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "bin": "./bin/cli.js",
+  "bin": "./bin/cli.ts",
   "files": [
     "dist",
     "src"
