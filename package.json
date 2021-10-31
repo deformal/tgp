@@ -9,7 +9,7 @@
     "src"
   ],
   "engines": {
-    "node": "16.8.0"
+    "node": ">=14.x"
   },
   "scripts": {
     "start": "tsdx watch",
