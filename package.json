@@ -1,5 +1,5 @@
 {
-  "version": "0.2.3",
+  "version": "2.3.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -45,40 +45,11 @@
     }
   ],
   "devDependencies": {
-    "@prisma/client": "^3.3.0",
-    "@size-limit/preset-small-lib": "^6.0.4",
-    "@supercharge/fs": "^3.4.0",
-    "@types/cookie-parser": "^1.4.2",
-    "@types/cors": "^2.8.12",
-    "@types/express": "^4.17.13",
-    "@types/express-jwt": "^6.0.2",
-    "@types/graphql": "^14.5.0",
-    "@types/ip": "^1.1.0",
-    "@types/jest": "^27.0.2",
-    "@types/jsonwebtoken": "^8.5.5",
     "@types/node": "^16.11.6",
-    "@types/pg": "^8.6.1",
-    "@types/validator": "^13.6.3",
     "husky": "^7.0.4",
     "size-limit": "^6.0.4",
     "tsdx": "^0.7.2",
     "tslib": "^2.3.1",
     "typescript": "^4.4.4"
-  },
-  "dependencies": {
-    "apollo-server-core": "^3.4.0",
-    "apollo-server-errors": "^3.2.0",
-    "apollo-server-express": "^3.4.0",
-    "axios": "^0.24.0",
-    "child-process": "^1.0.2",
-    "class-validator": "^0.3.0",
-    "cookie-parser": "^1.4.5",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "graphql": "^15.3.0",
-    "pg": "^8.7.1",
-    "type-graphql": "^0.3.0",
-    "winston": "^3.3.3"
   }
 }
