@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-import { execSync } from "child_process";
-
-const runCommand = (command: string) => {
-  try {
+const { execSync } = require("child_process")
+const runCommand = (command) => {
+  try
+  {
     execSync(`${command}`, { stdio: 'inherit' });
-  } catch (err) {
+  } catch (err)
+  {
     console.error(`Failed to execute ${command}`, err);
     return false;
   }
@@ -18,7 +19,8 @@ console.log(`Cloning the repository with name ${reppoName}`);
 const checkOut = runCommand(gitCheckOut);
 if (!checkOut) process.exit(-1);
 const deleteWorkflowDir = runCommand("rm -rf .github/*")
-if (!deleteWorkflowDir) {
+if (!deleteWorkflowDir)
+{
   console.error("Problem while generating template")
   process.exit(-1)
 }
