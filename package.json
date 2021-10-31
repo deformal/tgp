@@ -3,7 +3,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "bin": "/bin/cli.ts",
+  "bin": "./bin/cli.js",
   "files": [
     "dist",
     "src"
