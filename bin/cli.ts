@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { execSync } from 'child_process';
+import { execSync } from "child_process";
 
 const runCommand = (command: string) => {
   try {
@@ -12,14 +12,20 @@ const runCommand = (command: string) => {
   return true;
 };
 const reppoName = process.argv[2];
-const gitCheckOut = `git clone  https://github.com/deformal/tgpa.git ${reppoName}`;
+const gitCheckOut = `git clone  https://github.com/deformal/glowing-guacamole.git ${reppoName}`;
 const installDepsCommand = `cd${reppoName} $$ npm install`;
 console.log(`Cloning the repository with name ${reppoName}`);
 const checkOut = runCommand(gitCheckOut);
 if (!checkOut) process.exit(-1);
-
+const deleteWorkflowDir = runCommand("rm -rf .github/*")
+if (!deleteWorkflowDir) {
+  console.error("Problem while generating template")
+  process.exit(-1)
+}
 console.log(`Installing dependencies for ${reppoName}}`);
 const installedDeps = runCommand(installDepsCommand);
+
 if (!installedDeps) process.exit(-1);
 console.log('Thank you for using tgp, template. Happy coding 🚀');
-console.log(`cd ${reppoName} && yarn or npm install`);
+console.log(`cd ${reppoName} && yarn `);
+console.log(`yarn`);
