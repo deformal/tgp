@@ -12,7 +12,7 @@ const runCommand = (command: string) => {
   return true;
 };
 const reppoName = process.argv[2];
-const gitCheckOut = `git clone  https://github.com/deformal/type-graphql-prisma ${reppoName}`;
+const gitCheckOut = `git clone  https://github.com/deformal/tgpa.git ${reppoName}`;
 const installDepsCommand = `cd${reppoName} $$ npm install`;
 console.log(`Cloning the repository with name ${reppoName}`);
 const checkOut = runCommand(gitCheckOut);
