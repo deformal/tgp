@@ -1,3 +1,7 @@
-export function sayHello (): string {
-  return "Hello world"
+export function sayHello(): string {
+  return "Hello World"
+}
+
+export function sayBye(): string {
+  return "Bye"
 }
