@@ -30,7 +30,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@deformal/tgp",
+  "name": "@tgpa/tgpa",
   "author": "deformal",
   "module": "dist/tgp.esm.js",
   "size-limit": [
